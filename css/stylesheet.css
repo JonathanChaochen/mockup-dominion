@@ -1,0 +1,229 @@
+/*   header   */
+.full-banner {
+  background-image: url('../images/banner/banner3.jpg');
+  background-repeat: repeat;
+  background-size: contain, cover;
+  min-width: 300px;
+  min-height: 230px;
+}
+
+#search {
+  position: absolute;
+  right: 15px;
+  top: 0px;
+}
+
+/* logo */
+.app-logo {
+  animation: app-logo-spin infinite 20s linear;
+  width: 50px;
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------  NAVIGATION ---------*/
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a,
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer .footer-header {
+  font-weight: 700;
+}
+
+/*  ------ Featured products ------ */
+
+/* large screen change slider to none */
+#web-products {
+  display: none;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  width: 340px;
+  height: 380px;
+  padding: 10px;
+  margin: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-img {
+  display: block;
+  width: 300px;
+  height: 240px;
+  border-radius: 8px;
+  margin: 3px auto;
+}
+
+.product-text {
+  margin: 8px 4px 2px 0;
+}
+
+.product-view {
+  margin: 8px 2px 2px 0;
+  border: 1px solid #333;
+  padding: 3px 16px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Banner Ad */
+#banner-ads {
+  margin: 0 auto;
+}
+
+.banner-ad {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  height: auto;
+}
+
+/*  footer */
+footer {
+  background: #eee;
+  padding: 20px;
+}
+
+.footer-link {
+  display: block;
+  margin-top: 6px;
+}
+
+.footer-list {
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 992px) {
+  #search {
+    position: static;
+  }
+
+  #banner-ads {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #web-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #mobile-products {
+    display: none;
+  }
+
+  .mySlides {
+    display: block;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .prev,
+  .next {
+    display: none;
+  }
+}
